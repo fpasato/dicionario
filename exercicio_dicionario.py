@@ -20,3 +20,16 @@ print(produto)
 print()
 print(f'Produto: {produto["nome"]}')
 print(f"Preço: R${produto["preco"]:.2f}")
+
+produtos = [
+    {"nome": "Mouse", "preco": 150},
+    {"nome": "Teclado", "preco": 200},
+    {"nome": "Monitor", "preco": 1200}
+]
+
+print()
+print(produtos)
+print()
+
+for produto in produtos:
+    print(f"{produto['nome']} R${produto['preco']}")
